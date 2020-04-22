@@ -11,27 +11,44 @@
 </head>
 
 <body>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()">
+  <form
+  action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+  onsubmit="onSubmit()"
+  method="POST">
     <fieldset>
       <legend>Personal information</legend>
       <div class="input">
         <label for="surname">
           Surname:
-          <input name="surname" id="surname" type="text" autocomplete="off">
+          <input
+          name="surname"
+          id="surname"
+          type="text"
+          autocomplete="off">
         </label>
       </div>
 
       <div class="input">
         <label for="name">
           Name:
-          <input name="name" id="name" type="text" autocomplete="off">
+          <input
+          name="name"
+          id="name"
+          type="text"
+          autocomplete="off">
         </label>
       </div>
 
       <div class="input">
         <label for="age">
           How old are you?
-          <input name="age" id="age" type="number" min="1" max="150" value="12">
+          <input
+          name="age"
+          id="age"
+          type="number"
+          min="1"
+          max="150"
+          value="12">
         </label>
       </div>
 
@@ -43,9 +60,9 @@
       </div>
 
       <div class="input">
-        <label for="accept">
+        <label for="acceptAgreement">
           I accept the term of the agreement
-          <input name="accept" id="accept" type="checkbox">
+          <input name="accept" id="acceptAgreement" type="checkbox">
         </label>
       </div>
     </fieldset>
@@ -54,7 +71,11 @@
       <div class="input">
         <label for="email">
           E-mail:
-          <input name="email" id="email" type="email" placeholder="email@example.com">
+          <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="email@example.com">
         </label>
       </div>
 
@@ -110,7 +131,13 @@
       <div class="input">
         <label for="comments">
           Comments:
-          <textarea name="comments" id="comments" cols="20" rows="2" maxlength="50"></textarea>
+          <textarea
+          name="comments"
+          id="comments"
+          cols="20"
+          rows="2"
+          maxlength="50">
+          </textarea>
         </label>
       </div>
 
